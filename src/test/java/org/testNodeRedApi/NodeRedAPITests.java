@@ -5,12 +5,11 @@ import static org.hamcrest.Matchers.*;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.module.jsv.JsonSchemaValidator;
 import io.restassured.specification.RequestSpecification;
-import org.testng.ITestNGListener;
 import org.testng.annotations.*;
 
 import java.io.InputStream;
 
-public class NodeRedAPITests implements ITestNGListener {
+public class NodeRedAPITests {
     private RequestSpecification requestSpec;
 
     @BeforeTest
@@ -21,8 +20,8 @@ public class NodeRedAPITests implements ITestNGListener {
                 setPort(1880).
                 build();
     }
-    @Test
-    public void getLinkConfigTest(){
+    @Test(testName = "Check SPC Config Response Data", suiteName = "Test Node-Red APIs")
+    public void getSPCConfigTest(){
 
         given().relaxedHTTPSValidation().spec(requestSpec).when().get("/spc/FC:0F:E7:E9:47:3F/config")
                 .then()
@@ -30,13 +29,13 @@ public class NodeRedAPITests implements ITestNGListener {
                 .assertThat().body("configuration_version", hasItem(29));
     }
 
-    @Test
-    public void getLinkConfigSchemaValidationTest(){
-        InputStream linkConfigSchema = getClass ().getClassLoader ()
-                .getResourceAsStream ("LinkConfig.json");
-        assert linkConfigSchema != null;
+    @Test(testName = "Test SPC Config Schema", suiteName = "Test Node-Red APIs")
+    public void getSPCConfigSchemaValidationTest(){
+        InputStream spcConfigSchema = getClass ().getClassLoader ()
+                .getResourceAsStream ("SPCConfig.json");
+        assert spcConfigSchema != null;
         given().relaxedHTTPSValidation().spec(requestSpec).when().get("/spc/FC:0F:E7:E9:47:3F/config")
                 .then().statusCode(200).and()
-                .assertThat().body(JsonSchemaValidator.matchesJsonSchema (linkConfigSchema));
+                .assertThat().body(JsonSchemaValidator.matchesJsonSchema (spcConfigSchema));
     }
 }

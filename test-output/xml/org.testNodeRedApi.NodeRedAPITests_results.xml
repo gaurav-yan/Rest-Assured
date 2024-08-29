@@ -4,19 +4,19 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="5.876">
+           time="5.687">
     <properties></properties>
 
 
 
             <testcase
-                name="getLinkConfigSchemaValidationTest"
-                time="3.894"
+                name="getSPCConfigTest"
+                time="1.924"
                 classname="org.testNodeRedApi.NodeRedAPITests">
             </testcase>
             <testcase
-                name="getLinkConfigTest"
-                time="1.982"
+                name="getSPCConfigSchemaValidationTest"
+                time="3.763"
                 classname="org.testNodeRedApi.NodeRedAPITests">
             </testcase>
 </testsuite>
