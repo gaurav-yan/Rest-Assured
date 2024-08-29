@@ -1,0 +1,113 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/object1724932206.json",
+  "title": "Root",
+  "type": "array",
+  "default": [],
+  "items":{
+    "$id": "#root/items",
+    "title": "Items",
+    "type": "object",
+    "required": [
+      "spc_identifier",
+      "configuration_version",
+      "primary_ip_url",
+      "secondary_ip_url",
+      "ping_failure_threshold",
+      "ping_frequency",
+      "duration_to_skip_reboot",
+      "sgs_connect_cloud_url",
+      "lower_voltage_threshold",
+      "higher_voltage_threshold",
+      "send_health_data",
+      "power_cycle_off_time",
+      "is_power_strip_in_use"
+    ],
+    "properties": {
+      "spc_identifier": {
+        "$id": "#root/items/spc_identifier",
+        "title": "Spc_identifier",
+        "type": "string",
+        "default": "",
+        "pattern": "^.*$"
+      },
+      "configuration_version": {
+        "$id": "#root/items/configuration_version",
+        "title": "Configuration_version",
+        "type": "integer",
+        "default": 0
+      },
+      "primary_ip_url": {
+        "$id": "#root/items/primary_ip_url",
+        "title": "Primary_ip_url",
+        "type": "string",
+        "default": "",
+        "pattern": "^.*$"
+      },
+      "secondary_ip_url": {
+        "$id": "#root/items/secondary_ip_url",
+        "title": "Secondary_ip_url",
+        "type": "string",
+        "default": "",
+        "pattern": "^.*$"
+      },
+      "ping_failure_threshold": {
+        "$id": "#root/items/ping_failure_threshold",
+        "title": "Ping_failure_threshold",
+        "type": "integer",
+        "default": 0
+      },
+      "ping_frequency": {
+        "$id": "#root/items/ping_frequency",
+        "title": "Ping_frequency",
+        "type": "integer",
+        "default": 0
+      },
+      "duration_to_skip_reboot": {
+        "$id": "#root/items/duration_to_skip_reboot",
+        "title": "Duration_to_skip_reboot",
+        "type": "integer",
+        "default": 0
+      },
+      "sgs_connect_cloud_url": {
+        "$id": "#root/items/sgs_connect_cloud_url",
+        "title": "Sgs_connect_cloud_url",
+        "type": "string",
+        "default": "",
+        "pattern": "^.*$"
+      },
+      "lower_voltage_threshold": {
+        "$id": "#root/items/lower_voltage_threshold",
+        "title": "Lower_voltage_threshold",
+        "type": "integer",
+        "default": 0
+      },
+      "higher_voltage_threshold": {
+        "$id": "#root/items/higher_voltage_threshold",
+        "title": "Higher_voltage_threshold",
+        "type": "integer",
+        "default": 0
+      },
+      "send_health_data": {
+        "$id": "#root/items/send_health_data",
+        "title": "Send_health_data",
+        "type": "integer",
+        "default": 0
+      },
+      "power_cycle_off_time": {
+        "$id": "#root/items/power_cycle_off_time",
+        "title": "Power_cycle_off_time",
+        "type": "integer",
+        "default": 0
+      },
+      "is_power_strip_in_use": {
+        "$id": "#root/items/is_power_strip_in_use",
+        "title": "Is_power_strip_in_use",
+        "type": "integer",
+        "default": 0
+      }
+    }
+  }
+
+}

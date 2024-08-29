@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.salesAPI'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'io.rest-assured:rest-assured:5.5.0'
+    testImplementation 'org.testng:testng:7.9.0'
+    testImplementation 'org.testng:reportng:1.2.2'
+    // https://mvnrepository.com/artifact/io.rest-assured/json-schema-validator
+    testImplementation 'io.rest-assured:json-schema-validator:5.5.0'
+    // https://mvnrepository.com/artifact/org.slf4j/slf4j-api
+    testImplementation 'org.slf4j:slf4j-api:2.0.16'
+    testImplementation 'ch.qos.logback:logback-classic:1.5.7'
+}
+
+test {
+    useTestNG()
+}
