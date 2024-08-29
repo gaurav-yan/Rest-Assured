@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SalesAPI"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="5.876">
+    <properties></properties>
+
+
+
+            <testcase
+                name="getLinkConfigSchemaValidationTest"
+                time="3.894"
+                classname="org.testNodeRedApi.NodeRedAPITests">
+            </testcase>
+            <testcase
+                name="getLinkConfigTest"
+                time="1.982"
+                classname="org.testNodeRedApi.NodeRedAPITests">
+            </testcase>
+</testsuite>
