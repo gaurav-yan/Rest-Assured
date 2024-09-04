@@ -1,0 +1,84 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/object1724939467.json",
+  "title": "Root",
+  "type": "array",
+  "default": [],
+  "items":{
+    "$id": "#root/items",
+    "title": "Items",
+    "type": "object",
+    "required": [
+      "DotType",
+      "data_retain_period",
+      "configuration_version",
+      "network_type_name",
+      "send_health_information",
+      "link_integrations",
+      "dot_identifiers",
+      "NetworkPassword",
+      "NetworkSSID"
+    ],
+    "properties": {
+      "DotType": {
+        "$id": "#root/items/DotType",
+        "title": "Dottype",
+        "type": "null",
+        "default": null
+      },
+      "data_retain_period": {
+        "$id": "#root/items/data_retain_period",
+        "title": "Data_retain_period",
+        "type": "integer",
+        "default": 0
+      },
+      "configuration_version": {
+        "$id": "#root/items/configuration_version",
+        "title": "Configuration_version",
+        "type": "integer",
+        "default": 0
+      },
+      "network_type_name": {
+        "$id": "#root/items/network_type_name",
+        "title": "Network_type_name",
+        "type": "string",
+        "default": "",
+        "pattern": "^.*$"
+      },
+      "send_health_information": {
+        "$id": "#root/items/send_health_information",
+        "title": "Send_health_information",
+        "type": "integer",
+        "default": 0
+      },
+      "link_integrations": {
+        "$id": "#root/items/link_integrations",
+        "title": "Link_integrations",
+        "type": "null",
+        "default": null
+      },
+      "dot_identifiers": {
+        "$id": "#root/items/dot_identifiers",
+        "title": "Dot_identifiers",
+        "type": "null",
+        "default": null
+      },
+      "NetworkPassword": {
+        "$id": "#root/items/NetworkPassword",
+        "title": "Networkpassword",
+        "type": "string",
+        "default": "",
+        "pattern": "^.*$"
+      },
+      "NetworkSSID": {
+        "$id": "#root/items/NetworkSSID",
+        "title": "Networkssid",
+        "type": "string",
+        "default": "",
+        "pattern": "^.*$"
+      }
+    }
+  }
+
+}

@@ -1,22 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="SalesAPI"
-           tests="2"
+           tests="3"
            failures="0"
            errors="0"
            skipped="0"
-           time="5.687">
+           time="6.933">
     <properties></properties>
 
 
 
             <testcase
-                name="getSPCConfigTest"
-                time="1.924"
-                classname="org.testNodeRedApi.NodeRedAPITests">
+                name="getLinkConfigSchemaValidationTest"
+                time="3.978"
+                classname="NodeRedAPITests.SPCTest">
             </testcase>
             <testcase
                 name="getSPCConfigSchemaValidationTest"
-                time="3.763"
-                classname="org.testNodeRedApi.NodeRedAPITests">
+                time="1.090"
+                classname="NodeRedAPITests.SPCTest">
+            </testcase>
+            <testcase
+                name="getSPCConfigTest"
+                time="1.865"
+                classname="NodeRedAPITests.SPCTest">
             </testcase>
 </testsuite>
